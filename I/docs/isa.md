@@ -649,27 +649,6 @@ jalr x0, x1, 0
 
 ---
 
-# 12. System instructions
-
-## 12.1 HALT
-
-Encoding:
-
-```text
-31       24 23                                      0
-+----------+------------------------------------------+
-|   0xF0   |                 ZERO                     |
-+----------+------------------------------------------+
-```
-
-All bits except the opcode must be zero.
-
-`HALT` stops instruction execution until the processor is reset or otherwise resumed by implementation-specific hardware.
-
-This instruction is useful for FPGA simulation, bring-up, and simple bare-metal programs.
-
----
-
 # 13. Pseudo-instructions
 
 The following are assembler conveniences and do not require additional hardware opcodes.
